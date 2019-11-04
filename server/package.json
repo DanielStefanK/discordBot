@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "A discord music bot written in node with GraphQL API",
+  "main": "src/index.js",
+  "author": "Daniel Stefan Klose",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "startdb": "docker-compose -f 'dev-helpers/db-docker.yaml' up "
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-prettier": "^3.1.1"
+  },
+  "dependencies": {
+    "apollo-server": "^2.9.7",
+    "discord.js": "discordjs/discord.js",
+    "dotenv": "^8.2.0",
+    "graphql": "^14.5.8",
+    "node-opus": "^0.3.3",
+    "ytdl-core-discord": "^1.0.3"
+  }
+}
